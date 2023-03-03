@@ -11,7 +11,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Slf4j
@@ -44,5 +43,13 @@ public class TransactionController {
     public ResponseEntity<List<TransactionMapper>> getList(){
         List<TransactionMapper> response = transactionService.getList();
         return ResponseEntity.ok(response);
+    }
+
+    @DeleteMapping("/delete/{id}")
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    public ResponseEntity<?> delete(@PathVariable("id") Integer id) {
+        log.info("Delete Transaction --> " + id);
+        transactionService.delete(id);
+        return ResponseEntity.ok().build();
     }
 }

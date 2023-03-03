@@ -10,6 +10,9 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Slf4j
 @Service
 @RequiredArgsConstructor
@@ -40,5 +43,29 @@ public class OfferService {
                 .orElseThrow(() ->
                         new ItemNotFoundException("Not Found Offer")
                 );
+    }
+
+    public List<OfferDTO> offerlist() {
+        List<OfferDTO> dtos = new ArrayList<>();
+        for (OfferEntity offerEntity : offerRepository.findAll()) {
+            OfferDTO offerDto = new OfferDTO();
+            offerDto.setProductId(offerEntity.getProductId());
+            offerDto.setPlaceName(offerEntity.getPlaceName());
+            offerDto.setId(offerEntity.getId());
+            dtos.add(offerDto);
+        }
+        return dtos;
+    }
+
+    public OfferDTO update(String id, OfferDTO offerDTO) {
+        get(id);
+        productService.get(offerDTO.getProductId());
+        offerRepository.updateById(id,offerDTO.getPlaceName(),offerDTO.getProductId());
+        return offerDTO;
+    }
+
+    public void delete(String id) {
+        get(id);
+        offerRepository.deleteById(id);
     }
 }

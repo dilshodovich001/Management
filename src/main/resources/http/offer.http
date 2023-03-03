@@ -1,9 +1,24 @@
 ### Add Offer
 POST http://localhost:8081/offer/add_offer
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2Nzc3NjQzNDcsInBob25lIjoiMDAwMCIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjc3ODUwNzQ3LCJpc3MiOiJZb3VUdWJlIn0.PD6EweG2QTsJiYNS3dact7ink1mcJAhJO1RZDnYibvYPpiQWuEVsAMRi8HQuo8KuP-xcceY8UYhqvLB5dKBtqg
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2Nzc4NDc2ODEsInBob25lIjoiMDAwMCIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjc3OTM0MDgxLCJpc3MiOiJZb3VUdWJlIn0.1KggU20YLzJU_1bnIJAP2hvwgGaqkKX1qsrSQZKvw3enpzpv7e05s-8xO_zE8cBx-3evsDeMYtmM4zwKJPsdpw
+
+{
+  "placeName": "Toshkent",
+  "productId": "402880e586a74bf20186a77256800002"
+}
+
+### Offer List
+GET http://localhost:8081/offer/offer_list
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2Nzc4NDc2ODEsInBob25lIjoiMDAwMCIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjc3OTM0MDgxLCJpc3MiOiJZb3VUdWJlIn0.1KggU20YLzJU_1bnIJAP2hvwgGaqkKX1qsrSQZKvw3enpzpv7e05s-8xO_zE8cBx-3evsDeMYtmM4zwKJPsdpw
+
+
+### Offer Update
+PUT http://localhost:8081/offer/update_offer/402880e586a7c0920186a7c2934a0000
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2Nzc4NDc2ODEsInBob25lIjoiMDAwMCIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjc3OTM0MDgxLCJpc3MiOiJZb3VUdWJlIn0.1KggU20YLzJU_1bnIJAP2hvwgGaqkKX1qsrSQZKvw3enpzpv7e05s-8xO_zE8cBx-3evsDeMYtmM4zwKJPsdpw
 
 {
   "placeName": "Namangan",
-  "productId": "402880e586a74bf20186a77256800002"
+  "productId": ""
 }

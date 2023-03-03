@@ -7,3 +7,23 @@ Content-Type: application/json
   "districtId": 6,
   "productId": "402880e586a74bf20186a772966f0003"
 }
+
+### Request list
+GET http://localhost:8081/request/request_list
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2Nzc4NDc2ODEsInBob25lIjoiMDAwMCIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjc3OTM0MDgxLCJpc3MiOiJZb3VUdWJlIn0.1KggU20YLzJU_1bnIJAP2hvwgGaqkKX1qsrSQZKvw3enpzpv7e05s-8xO_zE8cBx-3evsDeMYtmM4zwKJPsdpw
+
+
+### Update Request
+PUT http://localhost:8081/request/update_request/402880e586a77f0b0186a77ff2390001
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2Nzc4NDc2ODEsInBob25lIjoiMDAwMCIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjc3OTM0MDgxLCJpc3MiOiJZb3VUdWJlIn0.1KggU20YLzJU_1bnIJAP2hvwgGaqkKX1qsrSQZKvw3enpzpv7e05s-8xO_zE8cBx-3evsDeMYtmM4zwKJPsdpw
+
+{
+  "placeName": "4 kvartal",
+  "productId": "402880e586a2fb860186a2fde6e90001",
+  "districtId": 4
+}
+
+### Delete Request
+DELETE http://localhost:8081/request/delete_request/402880e586a7e5520186a7e613890000
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2Nzc4NDc2ODEsInBob25lIjoiMDAwMCIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjc3OTM0MDgxLCJpc3MiOiJZb3VUdWJlIn0.1KggU20YLzJU_1bnIJAP2hvwgGaqkKX1qsrSQZKvw3enpzpv7e05s-8xO_zE8cBx-3evsDeMYtmM4zwKJPsdpw

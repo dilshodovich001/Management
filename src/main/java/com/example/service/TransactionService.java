@@ -71,4 +71,14 @@ public class TransactionService {
     public List<TransactionMapper> getList() {
         return transactionRepository.getList();
     }
+    public void get(Integer id) {
+       transactionRepository.findById(id).
+                orElseThrow(() -> new ItemNotFoundException
+                        ("Transaction Not Found"));
+    }
+
+    public void delete(Integer id) {
+        get(id);
+        transactionRepository.deleteById(id);
+    }
 }

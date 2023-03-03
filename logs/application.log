@@ -2578,3 +2578,588 @@ Caused by: org.hibernate.query.SemanticException: The assignment expression type
 2023-03-03T18:15:59.530+05:00  INFO 5428 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-03-03T18:15:59.531+05:00  INFO 5428 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2023-03-03T18:15:59.534+05:00  INFO 5428 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-03-03T18:46:48.719+05:00  INFO 5428 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-03T18:46:48.723+05:00  INFO 5428 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-03T18:46:48.729+05:00  INFO 5428 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-03T18:46:58.223+05:00  INFO 10840 --- [main] com.example.ManagementApplication        : Starting ManagementApplication using Java 19.0.2 with PID 10840 (C:\Users\Ma'ruf Raufov\Downloads\Telegram Desktop\Management\Management\src\main\resources\Management\Management\target\classes started by Ma'ruf Raufov in C:\Users\Ma'ruf Raufov\Downloads\Telegram Desktop\Management\Management\src\main\resources\Management\Management)
+2023-03-03T18:46:58.245+05:00 DEBUG 10840 --- [main] com.example.ManagementApplication        : Running with Spring Boot v3.0.1, Spring v6.0.3
+2023-03-03T18:46:58.247+05:00  INFO 10840 --- [main] com.example.ManagementApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-03-03T18:46:59.647+05:00  INFO 10840 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-03T18:46:59.751+05:00  INFO 10840 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 8 JPA repository interfaces.
+2023-03-03T18:47:00.588+05:00  INFO 10840 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-03-03T18:47:00.598+05:00  INFO 10840 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-03T18:47:00.599+05:00  INFO 10840 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-03-03T18:47:00.732+05:00  INFO 10840 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-03T18:47:00.733+05:00  INFO 10840 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2400 ms
+2023-03-03T18:47:00.909+05:00  INFO 10840 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-03T18:47:00.979+05:00  INFO 10840 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-03-03T18:47:01.214+05:00  WARN 10840 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-03-03T18:47:01.321+05:00  INFO 10840 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-03T18:47:01.487+05:00  INFO 10840 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@33a47707
+2023-03-03T18:47:01.489+05:00  INFO 10840 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-03T18:47:01.544+05:00  INFO 10840 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-03-03T18:47:01.796+05:00  WARN 10840 --- [main] org.hibernate.id.UUIDHexGenerator        : HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2023-03-03T18:47:02.779+05:00  INFO 10840 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-03T18:47:02.787+05:00  INFO 10840 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-03T18:47:03.389+05:00 DEBUG 10840 --- [main] com.example.config.JwtTokenFilter        : Filter 'jwtTokenFilter' configured for use
+2023-03-03T18:47:04.082+05:00  WARN 10840 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-03T18:47:04.949+05:00  INFO 10840 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3d837af7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@446dc997, org.springframework.security.web.context.SecurityContextHolderFilter@209ab1d7, org.springframework.security.web.header.HeaderWriterFilter@58b03882, org.springframework.security.web.authentication.logout.LogoutFilter@16817bad, com.example.config.JwtTokenFilter@2b69ff13, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5599f22f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@ece769a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@32cfd722, org.springframework.security.web.access.ExceptionTranslationFilter@402fcf14, org.springframework.security.web.access.intercept.AuthorizationFilter@3c48bbf3]
+2023-03-03T18:47:05.348+05:00  INFO 10840 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-03-03T18:47:05.361+05:00  INFO 10840 --- [main] com.example.ManagementApplication        : Started ManagementApplication in 7.744 seconds (process running for 8.69)
+2023-03-03T18:47:05.413+05:00  INFO 10840 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.5.1 by Redgate
+2023-03-03T18:47:05.413+05:00  INFO 10840 --- [main] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.5.1
+2023-03-03T18:47:05.413+05:00  INFO 10840 --- [main] o.f.c.internal.license.VersionPrinter    : 
+2023-03-03T18:47:05.434+05:00  INFO 10840 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/Management (PostgreSQL 15.1)
+2023-03-03T18:47:05.483+05:00  INFO 10840 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.030s)
+2023-03-03T18:47:05.497+05:00  INFO 10840 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 3
+2023-03-03T18:47:05.498+05:00  INFO 10840 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2023-03-03T18:47:45.102+05:00  INFO 10840 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-03T18:47:45.103+05:00  INFO 10840 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-03T18:47:45.104+05:00  INFO 10840 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-03T18:54:08.745+05:00  INFO 10840 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-03T18:54:08.748+05:00  INFO 10840 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-03T18:54:08.751+05:00  INFO 10840 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-03T18:54:17.567+05:00  INFO 10588 --- [main] com.example.ManagementApplication        : Starting ManagementApplication using Java 19.0.2 with PID 10588 (C:\Users\Ma'ruf Raufov\Downloads\Telegram Desktop\Management\Management\src\main\resources\Management\Management\target\classes started by Ma'ruf Raufov in C:\Users\Ma'ruf Raufov\Downloads\Telegram Desktop\Management\Management\src\main\resources\Management\Management)
+2023-03-03T18:54:17.585+05:00 DEBUG 10588 --- [main] com.example.ManagementApplication        : Running with Spring Boot v3.0.1, Spring v6.0.3
+2023-03-03T18:54:17.587+05:00  INFO 10588 --- [main] com.example.ManagementApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-03-03T18:54:18.897+05:00  INFO 10588 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-03T18:54:19.037+05:00  INFO 10588 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 123 ms. Found 8 JPA repository interfaces.
+2023-03-03T18:54:19.727+05:00  INFO 10588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-03-03T18:54:19.736+05:00  INFO 10588 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-03T18:54:19.737+05:00  INFO 10588 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-03-03T18:54:19.854+05:00  INFO 10588 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-03T18:54:19.854+05:00  INFO 10588 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2184 ms
+2023-03-03T18:54:20.018+05:00  INFO 10588 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-03T18:54:20.070+05:00  INFO 10588 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-03-03T18:54:20.263+05:00  WARN 10588 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-03-03T18:54:20.389+05:00  INFO 10588 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-03T18:54:20.568+05:00  INFO 10588 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6d7b2319
+2023-03-03T18:54:20.570+05:00  INFO 10588 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-03T18:54:20.618+05:00  INFO 10588 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-03-03T18:54:20.855+05:00  WARN 10588 --- [main] org.hibernate.id.UUIDHexGenerator        : HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2023-03-03T18:54:22.055+05:00  INFO 10588 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-03T18:54:22.065+05:00  INFO 10588 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-03T18:54:22.697+05:00 DEBUG 10588 --- [main] com.example.config.JwtTokenFilter        : Filter 'jwtTokenFilter' configured for use
+2023-03-03T18:54:23.428+05:00  WARN 10588 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-03T18:54:24.327+05:00  INFO 10588 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5f455d91, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@16c3e494, org.springframework.security.web.context.SecurityContextHolderFilter@66464f27, org.springframework.security.web.header.HeaderWriterFilter@6b8f1c62, org.springframework.security.web.authentication.logout.LogoutFilter@18eb6ea3, com.example.config.JwtTokenFilter@22e650e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@13198b8e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5ae5a507, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4b682e71, org.springframework.security.web.access.ExceptionTranslationFilter@2c6ed95a, org.springframework.security.web.access.intercept.AuthorizationFilter@5623fd90]
+2023-03-03T18:54:24.723+05:00  INFO 10588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-03-03T18:54:24.737+05:00  INFO 10588 --- [main] com.example.ManagementApplication        : Started ManagementApplication in 7.79 seconds (process running for 8.727)
+2023-03-03T18:54:24.791+05:00  INFO 10588 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.5.1 by Redgate
+2023-03-03T18:54:24.791+05:00  INFO 10588 --- [main] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.5.1
+2023-03-03T18:54:24.791+05:00  INFO 10588 --- [main] o.f.c.internal.license.VersionPrinter    : 
+2023-03-03T18:54:24.809+05:00  INFO 10588 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/Management (PostgreSQL 15.1)
+2023-03-03T18:54:24.850+05:00  INFO 10588 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.025s)
+2023-03-03T18:54:24.864+05:00  INFO 10588 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 3
+2023-03-03T18:54:24.865+05:00  INFO 10588 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2023-03-03T18:55:23.481+05:00  INFO 10588 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-03T18:55:23.483+05:00  INFO 10588 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-03T18:55:23.485+05:00  INFO 10588 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-03-03T18:56:12.363+05:00  INFO 10588 --- [http-nio-8081-exec-4] com.example.controller.OfferController   : Add Offer --> OfferDTO(id=null, placeName=Andijan, productId=402880e586a74bf20186a77256800002, product=null)
+2023-03-03T18:56:12.371+05:00  WARN 10588 --- [http-nio-8081-exec-4] c.e.e.h.ExceptionHandlerController       : Region Name Not Found
+2023-03-03T18:56:22.471+05:00  INFO 10588 --- [http-nio-8081-exec-5] com.example.controller.OfferController   : Add Offer --> OfferDTO(id=null, placeName=Andijon, productId=402880e586a74bf20186a77256800002, product=null)
+2023-03-03T18:56:22.473+05:00  WARN 10588 --- [http-nio-8081-exec-5] c.e.e.h.ExceptionHandlerController       : Region Name Not Found
+2023-03-03T18:56:32.181+05:00  INFO 10588 --- [http-nio-8081-exec-6] com.example.controller.OfferController   : Add Offer --> OfferDTO(id=null, placeName=Toshkent, productId=402880e586a74bf20186a77256800002, product=null)
+2023-03-03T18:58:15.017+05:00  INFO 10588 --- [http-nio-8081-exec-7] com.example.controller.OfferController   : Update Offer --> 402880e586a7c0920186a7c2934a0000 dto OfferDTO(id=null, placeName=null, productId=402880e586a74bf20186a77256800002, product=null)
+2023-03-03T18:59:40.044+05:00  INFO 10588 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-03T18:59:40.048+05:00  INFO 10588 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-03T18:59:40.052+05:00  INFO 10588 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-03T18:59:49.397+05:00  INFO 1860 --- [main] com.example.ManagementApplication        : Starting ManagementApplication using Java 19.0.2 with PID 1860 (C:\Users\Ma'ruf Raufov\Downloads\Telegram Desktop\Management\Management\src\main\resources\Management\Management\target\classes started by Ma'ruf Raufov in C:\Users\Ma'ruf Raufov\Downloads\Telegram Desktop\Management\Management\src\main\resources\Management\Management)
+2023-03-03T18:59:49.421+05:00 DEBUG 1860 --- [main] com.example.ManagementApplication        : Running with Spring Boot v3.0.1, Spring v6.0.3
+2023-03-03T18:59:49.423+05:00  INFO 1860 --- [main] com.example.ManagementApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-03-03T18:59:50.640+05:00  INFO 1860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-03T18:59:50.746+05:00  INFO 1860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 98 ms. Found 8 JPA repository interfaces.
+2023-03-03T18:59:51.428+05:00  INFO 1860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-03-03T18:59:51.438+05:00  INFO 1860 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-03T18:59:51.438+05:00  INFO 1860 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-03-03T18:59:51.559+05:00  INFO 1860 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-03T18:59:51.559+05:00  INFO 1860 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2062 ms
+2023-03-03T18:59:51.721+05:00  INFO 1860 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-03T18:59:51.775+05:00  INFO 1860 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-03-03T18:59:51.970+05:00  WARN 1860 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-03-03T18:59:52.115+05:00  INFO 1860 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-03T18:59:52.297+05:00  INFO 1860 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@77c23d90
+2023-03-03T18:59:52.299+05:00  INFO 1860 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-03T18:59:52.346+05:00  INFO 1860 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-03-03T18:59:52.611+05:00  WARN 1860 --- [main] org.hibernate.id.UUIDHexGenerator        : HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2023-03-03T18:59:53.996+05:00  INFO 1860 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-03T18:59:54.008+05:00  INFO 1860 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-03T18:59:54.885+05:00 DEBUG 1860 --- [main] com.example.config.JwtTokenFilter        : Filter 'jwtTokenFilter' configured for use
+2023-03-03T18:59:55.800+05:00  WARN 1860 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-03T18:59:56.816+05:00  INFO 1860 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3a9a12a1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@21312b5, org.springframework.security.web.context.SecurityContextHolderFilter@4f7bc9a3, org.springframework.security.web.header.HeaderWriterFilter@27879518, org.springframework.security.web.authentication.logout.LogoutFilter@25bfc558, com.example.config.JwtTokenFilter@4c81e7c2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@cf933b1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@b7952d2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@22a89db, org.springframework.security.web.access.ExceptionTranslationFilter@7baf7a9d, org.springframework.security.web.access.intercept.AuthorizationFilter@29422e61]
+2023-03-03T18:59:57.260+05:00  INFO 1860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-03-03T18:59:57.271+05:00  INFO 1860 --- [main] com.example.ManagementApplication        : Started ManagementApplication in 8.543 seconds (process running for 9.507)
+2023-03-03T18:59:57.319+05:00  INFO 1860 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.5.1 by Redgate
+2023-03-03T18:59:57.320+05:00  INFO 1860 --- [main] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.5.1
+2023-03-03T18:59:57.320+05:00  INFO 1860 --- [main] o.f.c.internal.license.VersionPrinter    : 
+2023-03-03T18:59:57.334+05:00  INFO 1860 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/Management (PostgreSQL 15.1)
+2023-03-03T18:59:57.376+05:00  INFO 1860 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.025s)
+2023-03-03T18:59:57.385+05:00  INFO 1860 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 3
+2023-03-03T18:59:57.385+05:00  INFO 1860 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2023-03-03T19:01:51.086+05:00  INFO 1860 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-03T19:01:51.090+05:00  INFO 1860 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-03T19:01:51.095+05:00  INFO 1860 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-03T19:01:59.905+05:00  INFO 6724 --- [main] com.example.ManagementApplication        : Starting ManagementApplication using Java 19.0.2 with PID 6724 (C:\Users\Ma'ruf Raufov\Downloads\Telegram Desktop\Management\Management\src\main\resources\Management\Management\target\classes started by Ma'ruf Raufov in C:\Users\Ma'ruf Raufov\Downloads\Telegram Desktop\Management\Management\src\main\resources\Management\Management)
+2023-03-03T19:01:59.923+05:00 DEBUG 6724 --- [main] com.example.ManagementApplication        : Running with Spring Boot v3.0.1, Spring v6.0.3
+2023-03-03T19:01:59.924+05:00  INFO 6724 --- [main] com.example.ManagementApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-03-03T19:02:01.212+05:00  INFO 6724 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-03T19:02:01.299+05:00  INFO 6724 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 8 JPA repository interfaces.
+2023-03-03T19:02:01.963+05:00  INFO 6724 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-03-03T19:02:01.973+05:00  INFO 6724 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-03T19:02:01.973+05:00  INFO 6724 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-03-03T19:02:02.087+05:00  INFO 6724 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-03T19:02:02.087+05:00  INFO 6724 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2060 ms
+2023-03-03T19:02:02.228+05:00  INFO 6724 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-03T19:02:02.286+05:00  INFO 6724 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-03-03T19:02:02.473+05:00  WARN 6724 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-03-03T19:02:02.590+05:00  INFO 6724 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-03T19:02:02.763+05:00  INFO 6724 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5ab7ac02
+2023-03-03T19:02:02.765+05:00  INFO 6724 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-03T19:02:02.847+05:00  INFO 6724 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-03-03T19:02:03.097+05:00  WARN 6724 --- [main] org.hibernate.id.UUIDHexGenerator        : HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2023-03-03T19:02:04.207+05:00  INFO 6724 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-03T19:02:04.217+05:00  INFO 6724 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-03T19:02:04.795+05:00 DEBUG 6724 --- [main] com.example.config.JwtTokenFilter        : Filter 'jwtTokenFilter' configured for use
+2023-03-03T19:02:05.486+05:00  WARN 6724 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-03T19:02:06.376+05:00  INFO 6724 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3d837af7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@446dc997, org.springframework.security.web.context.SecurityContextHolderFilter@209ab1d7, org.springframework.security.web.header.HeaderWriterFilter@58b03882, org.springframework.security.web.authentication.logout.LogoutFilter@16817bad, com.example.config.JwtTokenFilter@35599228, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5599f22f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@ece769a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@32cfd722, org.springframework.security.web.access.ExceptionTranslationFilter@402fcf14, org.springframework.security.web.access.intercept.AuthorizationFilter@3c48bbf3]
+2023-03-03T19:02:06.830+05:00  INFO 6724 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-03-03T19:02:06.841+05:00  INFO 6724 --- [main] com.example.ManagementApplication        : Started ManagementApplication in 7.555 seconds (process running for 8.442)
+2023-03-03T19:02:06.891+05:00  INFO 6724 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.5.1 by Redgate
+2023-03-03T19:02:06.891+05:00  INFO 6724 --- [main] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.5.1
+2023-03-03T19:02:06.891+05:00  INFO 6724 --- [main] o.f.c.internal.license.VersionPrinter    : 
+2023-03-03T19:02:06.910+05:00  INFO 6724 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/Management (PostgreSQL 15.1)
+2023-03-03T19:02:06.961+05:00  INFO 6724 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.035s)
+2023-03-03T19:02:06.973+05:00  INFO 6724 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 3
+2023-03-03T19:02:06.974+05:00  INFO 6724 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2023-03-03T19:02:32.474+05:00  INFO 6724 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-03T19:02:32.476+05:00  INFO 6724 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-03T19:02:32.477+05:00  INFO 6724 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-03T19:02:32.907+05:00  INFO 6724 --- [http-nio-8081-exec-1] com.example.controller.OfferController   : Update Offer --> 402880e586a7c0920186a7c2934a0000 dto OfferDTO(id=null, placeName=null, productId=null, product=null)
+2023-03-03T19:02:53.892+05:00  INFO 6724 --- [http-nio-8081-exec-4] com.example.controller.OfferController   : Update Offer --> 402880e586a7c0920186a7c2934a0000 dto OfferDTO(id=null, placeName=null, productId=null, product=null)
+2023-03-03T19:03:24.837+05:00  INFO 6724 --- [http-nio-8081-exec-5] com.example.controller.OfferController   : Update Offer --> 402880e586a7c0920186a7c2934a0000 dto OfferDTO(id=null, placeName=null, productId=null, product=null)
+2023-03-03T19:03:53.447+05:00  INFO 6724 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-03T19:03:53.449+05:00  INFO 6724 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-03T19:03:53.455+05:00  INFO 6724 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-03T19:04:01.924+05:00  INFO 1288 --- [main] com.example.ManagementApplication        : Starting ManagementApplication using Java 19.0.2 with PID 1288 (C:\Users\Ma'ruf Raufov\Downloads\Telegram Desktop\Management\Management\src\main\resources\Management\Management\target\classes started by Ma'ruf Raufov in C:\Users\Ma'ruf Raufov\Downloads\Telegram Desktop\Management\Management\src\main\resources\Management\Management)
+2023-03-03T19:04:01.942+05:00 DEBUG 1288 --- [main] com.example.ManagementApplication        : Running with Spring Boot v3.0.1, Spring v6.0.3
+2023-03-03T19:04:01.943+05:00  INFO 1288 --- [main] com.example.ManagementApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-03-03T19:04:03.185+05:00  INFO 1288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-03T19:04:03.317+05:00  INFO 1288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 121 ms. Found 8 JPA repository interfaces.
+2023-03-03T19:04:03.994+05:00  INFO 1288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-03-03T19:04:04.003+05:00  INFO 1288 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-03T19:04:04.004+05:00  INFO 1288 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-03-03T19:04:04.101+05:00  INFO 1288 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-03T19:04:04.102+05:00  INFO 1288 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2069 ms
+2023-03-03T19:04:04.274+05:00  INFO 1288 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-03T19:04:04.321+05:00  INFO 1288 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-03-03T19:04:04.517+05:00  WARN 1288 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-03-03T19:04:04.634+05:00  INFO 1288 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-03T19:04:04.836+05:00  INFO 1288 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@720a1fd0
+2023-03-03T19:04:04.837+05:00  INFO 1288 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-03T19:04:04.887+05:00  INFO 1288 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-03-03T19:04:05.129+05:00  WARN 1288 --- [main] org.hibernate.id.UUIDHexGenerator        : HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2023-03-03T19:04:06.498+05:00  INFO 1288 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-03T19:04:06.516+05:00  INFO 1288 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-03T19:04:07.159+05:00 DEBUG 1288 --- [main] com.example.config.JwtTokenFilter        : Filter 'jwtTokenFilter' configured for use
+2023-03-03T19:04:07.795+05:00  WARN 1288 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-03T19:04:08.680+05:00  INFO 1288 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@626e5554, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6ee34fe4, org.springframework.security.web.context.SecurityContextHolderFilter@3d837af7, org.springframework.security.web.header.HeaderWriterFilter@3c48bbf3, org.springframework.security.web.authentication.logout.LogoutFilter@1464a177, com.example.config.JwtTokenFilter@15324f25, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@32cfd722, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@69815126, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5aa0e9c6, org.springframework.security.web.access.ExceptionTranslationFilter@399ac1a3, org.springframework.security.web.access.intercept.AuthorizationFilter@5e3a577a]
+2023-03-03T19:04:09.167+05:00  INFO 1288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-03-03T19:04:09.178+05:00  INFO 1288 --- [main] com.example.ManagementApplication        : Started ManagementApplication in 7.847 seconds (process running for 8.787)
+2023-03-03T19:04:09.223+05:00  INFO 1288 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.5.1 by Redgate
+2023-03-03T19:04:09.224+05:00  INFO 1288 --- [main] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.5.1
+2023-03-03T19:04:09.224+05:00  INFO 1288 --- [main] o.f.c.internal.license.VersionPrinter    : 
+2023-03-03T19:04:09.246+05:00  INFO 1288 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/Management (PostgreSQL 15.1)
+2023-03-03T19:04:09.291+05:00  INFO 1288 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.022s)
+2023-03-03T19:04:09.302+05:00  INFO 1288 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 3
+2023-03-03T19:04:09.303+05:00  INFO 1288 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2023-03-03T19:04:19.129+05:00  INFO 1288 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-03T19:04:19.130+05:00  INFO 1288 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-03T19:04:19.132+05:00  INFO 1288 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-03T19:04:19.467+05:00  INFO 1288 --- [http-nio-8081-exec-1] com.example.controller.OfferController   : Update Offer --> 402880e586a7c0920186a7c2934a0000 dto OfferDTO(id=null, placeName=null, productId=null, product=null)
+2023-03-03T19:04:55.341+05:00  INFO 1288 --- [http-nio-8081-exec-2] com.example.controller.OfferController   : Update Offer --> 402880e586a7c0920186a7c2934a0000 dto OfferDTO(id=null, placeName=Namangan, productId=null, product=null)
+2023-03-03T19:05:32.691+05:00  INFO 1288 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-03T19:05:32.694+05:00  INFO 1288 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-03T19:05:32.699+05:00  INFO 1288 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-03T19:05:41.438+05:00  INFO 13824 --- [main] com.example.ManagementApplication        : Starting ManagementApplication using Java 19.0.2 with PID 13824 (C:\Users\Ma'ruf Raufov\Downloads\Telegram Desktop\Management\Management\src\main\resources\Management\Management\target\classes started by Ma'ruf Raufov in C:\Users\Ma'ruf Raufov\Downloads\Telegram Desktop\Management\Management\src\main\resources\Management\Management)
+2023-03-03T19:05:41.458+05:00 DEBUG 13824 --- [main] com.example.ManagementApplication        : Running with Spring Boot v3.0.1, Spring v6.0.3
+2023-03-03T19:05:41.460+05:00  INFO 13824 --- [main] com.example.ManagementApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-03-03T19:05:42.562+05:00  INFO 13824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-03T19:05:42.671+05:00  INFO 13824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 100 ms. Found 8 JPA repository interfaces.
+2023-03-03T19:05:43.371+05:00  INFO 13824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-03-03T19:05:43.381+05:00  INFO 13824 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-03T19:05:43.382+05:00  INFO 13824 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-03-03T19:05:43.475+05:00  INFO 13824 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-03T19:05:43.476+05:00  INFO 13824 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1930 ms
+2023-03-03T19:05:43.614+05:00  INFO 13824 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-03T19:05:43.686+05:00  INFO 13824 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-03-03T19:05:43.917+05:00  WARN 13824 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-03-03T19:05:44.035+05:00  INFO 13824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-03T19:05:44.242+05:00  INFO 13824 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@720a1fd0
+2023-03-03T19:05:44.244+05:00  INFO 13824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-03T19:05:44.288+05:00  INFO 13824 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-03-03T19:05:44.516+05:00  WARN 13824 --- [main] org.hibernate.id.UUIDHexGenerator        : HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2023-03-03T19:05:45.572+05:00  INFO 13824 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-03T19:05:45.583+05:00  INFO 13824 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-03T19:05:46.257+05:00 DEBUG 13824 --- [main] com.example.config.JwtTokenFilter        : Filter 'jwtTokenFilter' configured for use
+2023-03-03T19:05:46.878+05:00  WARN 13824 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-03T19:05:47.723+05:00  INFO 13824 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6e21b6f8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@69a14512, org.springframework.security.web.context.SecurityContextHolderFilter@6c7f3af6, org.springframework.security.web.header.HeaderWriterFilter@6237927a, org.springframework.security.web.authentication.logout.LogoutFilter@3d3e9163, com.example.config.JwtTokenFilter@35599228, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@440d45c5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6b862f17, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4bd7e0b6, org.springframework.security.web.access.ExceptionTranslationFilter@37f687c1, org.springframework.security.web.access.intercept.AuthorizationFilter@6d0d5147]
+2023-03-03T19:05:48.258+05:00  INFO 13824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-03-03T19:05:48.280+05:00  INFO 13824 --- [main] com.example.ManagementApplication        : Started ManagementApplication in 7.465 seconds (process running for 8.391)
+2023-03-03T19:05:48.342+05:00  INFO 13824 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.5.1 by Redgate
+2023-03-03T19:05:48.343+05:00  INFO 13824 --- [main] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.5.1
+2023-03-03T19:05:48.343+05:00  INFO 13824 --- [main] o.f.c.internal.license.VersionPrinter    : 
+2023-03-03T19:05:48.360+05:00  INFO 13824 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/Management (PostgreSQL 15.1)
+2023-03-03T19:05:48.438+05:00  INFO 13824 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.047s)
+2023-03-03T19:05:48.461+05:00  INFO 13824 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 3
+2023-03-03T19:05:48.462+05:00  INFO 13824 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2023-03-03T19:06:50.664+05:00  INFO 13824 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-03T19:06:50.667+05:00  INFO 13824 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-03T19:06:50.673+05:00  INFO 13824 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-03T19:06:59.495+05:00  INFO 11796 --- [main] com.example.ManagementApplication        : Starting ManagementApplication using Java 19.0.2 with PID 11796 (C:\Users\Ma'ruf Raufov\Downloads\Telegram Desktop\Management\Management\src\main\resources\Management\Management\target\classes started by Ma'ruf Raufov in C:\Users\Ma'ruf Raufov\Downloads\Telegram Desktop\Management\Management\src\main\resources\Management\Management)
+2023-03-03T19:06:59.515+05:00 DEBUG 11796 --- [main] com.example.ManagementApplication        : Running with Spring Boot v3.0.1, Spring v6.0.3
+2023-03-03T19:06:59.516+05:00  INFO 11796 --- [main] com.example.ManagementApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-03-03T19:07:00.745+05:00  INFO 11796 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-03T19:07:00.832+05:00  INFO 11796 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 8 JPA repository interfaces.
+2023-03-03T19:07:01.468+05:00  INFO 11796 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-03-03T19:07:01.477+05:00  INFO 11796 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-03T19:07:01.478+05:00  INFO 11796 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-03-03T19:07:01.582+05:00  INFO 11796 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-03T19:07:01.582+05:00  INFO 11796 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1978 ms
+2023-03-03T19:07:01.727+05:00  INFO 11796 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-03T19:07:01.786+05:00  INFO 11796 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-03-03T19:07:01.969+05:00  WARN 11796 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-03-03T19:07:02.074+05:00  INFO 11796 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-03T19:07:02.245+05:00  INFO 11796 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6fc1a8f6
+2023-03-03T19:07:02.248+05:00  INFO 11796 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-03T19:07:02.297+05:00  INFO 11796 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-03-03T19:07:02.532+05:00  WARN 11796 --- [main] org.hibernate.id.UUIDHexGenerator        : HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2023-03-03T19:07:03.604+05:00  INFO 11796 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-03T19:07:03.616+05:00  INFO 11796 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-03T19:07:04.220+05:00 DEBUG 11796 --- [main] com.example.config.JwtTokenFilter        : Filter 'jwtTokenFilter' configured for use
+2023-03-03T19:07:04.854+05:00  WARN 11796 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-03T19:07:05.680+05:00  INFO 11796 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@381ed137, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6eacf3be, org.springframework.security.web.context.SecurityContextHolderFilter@33e80a27, org.springframework.security.web.header.HeaderWriterFilter@cf933b1, org.springframework.security.web.authentication.logout.LogoutFilter@4ff3ca23, com.example.config.JwtTokenFilter@e353e1d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@37e7e089, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@58f05266, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1912ba29, org.springframework.security.web.access.ExceptionTranslationFilter@4f7bc9a3, org.springframework.security.web.access.intercept.AuthorizationFilter@22a89db]
+2023-03-03T19:07:06.073+05:00  INFO 11796 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-03-03T19:07:06.083+05:00  INFO 11796 --- [main] com.example.ManagementApplication        : Started ManagementApplication in 7.127 seconds (process running for 8.16)
+2023-03-03T19:07:06.134+05:00  INFO 11796 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.5.1 by Redgate
+2023-03-03T19:07:06.135+05:00  INFO 11796 --- [main] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.5.1
+2023-03-03T19:07:06.135+05:00  INFO 11796 --- [main] o.f.c.internal.license.VersionPrinter    : 
+2023-03-03T19:07:06.150+05:00  INFO 11796 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/Management (PostgreSQL 15.1)
+2023-03-03T19:07:06.191+05:00  INFO 11796 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.023s)
+2023-03-03T19:07:06.204+05:00  INFO 11796 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 3
+2023-03-03T19:07:06.205+05:00  INFO 11796 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2023-03-03T19:08:13.029+05:00  INFO 11796 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-03T19:08:13.030+05:00  INFO 11796 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-03T19:08:13.031+05:00  INFO 11796 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-03T19:08:21.199+05:00  INFO 11796 --- [http-nio-8081-exec-2] com.example.controller.OfferController   : Update Offer --> 402880e586a7c0920186a7c2934a0000 dto OfferDTO(id=null, placeName=Namangan, productId= ssssssssscx, product=null)
+2023-03-03T19:08:21.235+05:00  WARN 11796 --- [http-nio-8081-exec-2] c.e.e.h.ExceptionHandlerController       : Not found Product
+2023-03-03T19:14:57.999+05:00  INFO 11796 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-03T19:14:58.003+05:00  INFO 11796 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-03T19:14:58.009+05:00  INFO 11796 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-03T19:15:07.128+05:00  INFO 7560 --- [main] com.example.ManagementApplication        : Starting ManagementApplication using Java 19.0.2 with PID 7560 (C:\Users\Ma'ruf Raufov\Downloads\Telegram Desktop\Management\Management\src\main\resources\Management\Management\target\classes started by Ma'ruf Raufov in C:\Users\Ma'ruf Raufov\Downloads\Telegram Desktop\Management\Management\src\main\resources\Management\Management)
+2023-03-03T19:15:07.145+05:00 DEBUG 7560 --- [main] com.example.ManagementApplication        : Running with Spring Boot v3.0.1, Spring v6.0.3
+2023-03-03T19:15:07.146+05:00  INFO 7560 --- [main] com.example.ManagementApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-03-03T19:15:08.456+05:00  INFO 7560 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-03T19:15:08.594+05:00  INFO 7560 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 123 ms. Found 8 JPA repository interfaces.
+2023-03-03T19:15:09.260+05:00  INFO 7560 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-03-03T19:15:09.273+05:00  INFO 7560 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-03T19:15:09.273+05:00  INFO 7560 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-03-03T19:15:09.401+05:00  INFO 7560 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-03T19:15:09.402+05:00  INFO 7560 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2174 ms
+2023-03-03T19:15:09.547+05:00  INFO 7560 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-03T19:15:09.607+05:00  INFO 7560 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-03-03T19:15:09.802+05:00  WARN 7560 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-03-03T19:15:09.927+05:00  INFO 7560 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-03T19:15:10.106+05:00  INFO 7560 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4fad51a3
+2023-03-03T19:15:10.107+05:00  INFO 7560 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-03T19:15:10.150+05:00  INFO 7560 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-03-03T19:15:10.381+05:00  WARN 7560 --- [main] org.hibernate.id.UUIDHexGenerator        : HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2023-03-03T19:15:11.462+05:00  INFO 7560 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-03T19:15:11.473+05:00  INFO 7560 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-03T19:15:12.082+05:00 DEBUG 7560 --- [main] com.example.config.JwtTokenFilter        : Filter 'jwtTokenFilter' configured for use
+2023-03-03T19:15:12.775+05:00  WARN 7560 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-03T19:15:13.665+05:00  INFO 7560 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@58052571, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1464a177, org.springframework.security.web.context.SecurityContextHolderFilter@4ca50bb9, org.springframework.security.web.header.HeaderWriterFilter@6b862f17, org.springframework.security.web.authentication.logout.LogoutFilter@3217e970, com.example.config.JwtTokenFilter@7b9f7087, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@301c0aae, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@105e8710, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@14144cc9, org.springframework.security.web.access.ExceptionTranslationFilter@3285c141, org.springframework.security.web.access.intercept.AuthorizationFilter@2cbc0224]
+2023-03-03T19:15:14.113+05:00  INFO 7560 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-03-03T19:15:14.131+05:00  INFO 7560 --- [main] com.example.ManagementApplication        : Started ManagementApplication in 7.539 seconds (process running for 8.481)
+2023-03-03T19:15:14.204+05:00  INFO 7560 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.5.1 by Redgate
+2023-03-03T19:15:14.205+05:00  INFO 7560 --- [main] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.5.1
+2023-03-03T19:15:14.205+05:00  INFO 7560 --- [main] o.f.c.internal.license.VersionPrinter    : 
+2023-03-03T19:15:14.220+05:00  INFO 7560 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/Management (PostgreSQL 15.1)
+2023-03-03T19:15:14.270+05:00  INFO 7560 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.029s)
+2023-03-03T19:15:14.282+05:00  INFO 7560 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 3
+2023-03-03T19:15:14.282+05:00  INFO 7560 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2023-03-03T19:16:11.231+05:00  INFO 7560 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-03T19:16:11.231+05:00  INFO 7560 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-03T19:16:11.235+05:00  INFO 7560 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-03-03T19:21:17.422+05:00  INFO 7560 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-03T19:21:17.426+05:00  INFO 7560 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-03T19:21:17.432+05:00  INFO 7560 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-03T19:21:26.507+05:00  INFO 10220 --- [main] com.example.ManagementApplication        : Starting ManagementApplication using Java 19.0.2 with PID 10220 (C:\Users\Ma'ruf Raufov\Downloads\Telegram Desktop\Management\Management\src\main\resources\Management\Management\target\classes started by Ma'ruf Raufov in C:\Users\Ma'ruf Raufov\Downloads\Telegram Desktop\Management\Management\src\main\resources\Management\Management)
+2023-03-03T19:21:26.522+05:00 DEBUG 10220 --- [main] com.example.ManagementApplication        : Running with Spring Boot v3.0.1, Spring v6.0.3
+2023-03-03T19:21:26.522+05:00  INFO 10220 --- [main] com.example.ManagementApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-03-03T19:21:27.701+05:00  INFO 10220 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-03T19:21:27.782+05:00  INFO 10220 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73 ms. Found 8 JPA repository interfaces.
+2023-03-03T19:21:28.422+05:00  INFO 10220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-03-03T19:21:28.433+05:00  INFO 10220 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-03T19:21:28.433+05:00  INFO 10220 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-03-03T19:21:28.575+05:00  INFO 10220 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-03T19:21:28.576+05:00  INFO 10220 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1970 ms
+2023-03-03T19:21:28.716+05:00  INFO 10220 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-03T19:21:28.782+05:00  INFO 10220 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-03-03T19:21:29.003+05:00  WARN 10220 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-03-03T19:21:29.106+05:00  INFO 10220 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-03T19:21:29.319+05:00  INFO 10220 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@14b5752f
+2023-03-03T19:21:29.321+05:00  INFO 10220 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-03T19:21:29.373+05:00  INFO 10220 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-03-03T19:21:29.616+05:00  WARN 10220 --- [main] org.hibernate.id.UUIDHexGenerator        : HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2023-03-03T19:21:30.645+05:00  INFO 10220 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-03T19:21:30.654+05:00  INFO 10220 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-03T19:21:31.242+05:00 DEBUG 10220 --- [main] com.example.config.JwtTokenFilter        : Filter 'jwtTokenFilter' configured for use
+2023-03-03T19:21:31.863+05:00  WARN 10220 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-03T19:21:32.731+05:00  INFO 10220 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6ee34fe4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5aa0e9c6, org.springframework.security.web.context.SecurityContextHolderFilter@446dc997, org.springframework.security.web.header.HeaderWriterFilter@4ac7927a, org.springframework.security.web.authentication.logout.LogoutFilter@14144cc9, com.example.config.JwtTokenFilter@267309f7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@69815126, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4ff3ca23, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@57dd4bc9, org.springframework.security.web.access.ExceptionTranslationFilter@5d18a787, org.springframework.security.web.access.intercept.AuthorizationFilter@6965c32]
+2023-03-03T19:21:33.141+05:00  INFO 10220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-03-03T19:21:33.151+05:00  INFO 10220 --- [main] com.example.ManagementApplication        : Started ManagementApplication in 7.262 seconds (process running for 8.224)
+2023-03-03T19:21:33.209+05:00  INFO 10220 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.5.1 by Redgate
+2023-03-03T19:21:33.210+05:00  INFO 10220 --- [main] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.5.1
+2023-03-03T19:21:33.210+05:00  INFO 10220 --- [main] o.f.c.internal.license.VersionPrinter    : 
+2023-03-03T19:21:33.223+05:00  INFO 10220 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/Management (PostgreSQL 15.1)
+2023-03-03T19:21:33.283+05:00  INFO 10220 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.032s)
+2023-03-03T19:21:33.296+05:00  INFO 10220 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 3
+2023-03-03T19:21:33.296+05:00  INFO 10220 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2023-03-03T19:25:49.778+05:00  INFO 10220 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-03T19:25:49.779+05:00  INFO 10220 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-03T19:25:49.782+05:00  INFO 10220 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-03-03T19:25:50.110+05:00  INFO 10220 --- [http-nio-8081-exec-1] c.example.controller.RequestController   : Update Request --> 402880e586a77f0b0186a77ff2390001 dto RequestDTO(id=null, placeName=4 kvartal, districtId=null, productId=null)
+2023-03-03T19:26:45.798+05:00  INFO 10220 --- [http-nio-8081-exec-2] c.example.controller.RequestController   : Update Request --> 402880e586a77f0b0186a77ff2390001 dto RequestDTO(id=null, placeName=4 kvartal, districtId=4, productId=402880e586a2fb860186a2fde6e90001)
+2023-03-03T19:29:53.049+05:00  INFO 10220 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-03T19:29:53.052+05:00  INFO 10220 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-03T19:29:53.059+05:00  INFO 10220 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-03T19:30:00.943+05:00  INFO 11948 --- [main] com.example.ManagementApplication        : Starting ManagementApplication using Java 19.0.2 with PID 11948 (C:\Users\Ma'ruf Raufov\Downloads\Telegram Desktop\Management\Management\src\main\resources\Management\Management\target\classes started by Ma'ruf Raufov in C:\Users\Ma'ruf Raufov\Downloads\Telegram Desktop\Management\Management\src\main\resources\Management\Management)
+2023-03-03T19:30:00.958+05:00 DEBUG 11948 --- [main] com.example.ManagementApplication        : Running with Spring Boot v3.0.1, Spring v6.0.3
+2023-03-03T19:30:00.959+05:00  INFO 11948 --- [main] com.example.ManagementApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-03-03T19:30:02.005+05:00  INFO 11948 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-03T19:30:02.081+05:00  INFO 11948 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 8 JPA repository interfaces.
+2023-03-03T19:30:02.672+05:00  INFO 11948 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-03-03T19:30:02.684+05:00  INFO 11948 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-03T19:30:02.684+05:00  INFO 11948 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-03-03T19:30:02.779+05:00  INFO 11948 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-03T19:30:02.779+05:00  INFO 11948 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1747 ms
+2023-03-03T19:30:02.907+05:00  INFO 11948 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-03T19:30:02.961+05:00  INFO 11948 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-03-03T19:30:03.130+05:00  WARN 11948 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-03-03T19:30:03.234+05:00  INFO 11948 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-03T19:30:03.412+05:00  INFO 11948 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4d290757
+2023-03-03T19:30:03.414+05:00  INFO 11948 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-03T19:30:03.461+05:00  INFO 11948 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-03-03T19:30:03.687+05:00  WARN 11948 --- [main] org.hibernate.id.UUIDHexGenerator        : HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2023-03-03T19:30:04.651+05:00  INFO 11948 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-03T19:30:04.664+05:00  INFO 11948 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-03T19:30:05.196+05:00 DEBUG 11948 --- [main] com.example.config.JwtTokenFilter        : Filter 'jwtTokenFilter' configured for use
+2023-03-03T19:30:05.881+05:00  WARN 11948 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-03T19:30:06.871+05:00  INFO 11948 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4b548913, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@31048b3d, org.springframework.security.web.context.SecurityContextHolderFilter@6517bc6b, org.springframework.security.web.header.HeaderWriterFilter@14144cc9, org.springframework.security.web.authentication.logout.LogoutFilter@4843b35f, com.example.config.JwtTokenFilter@7136ad9a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@44eda25b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5e3a577a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4d609cc3, org.springframework.security.web.access.ExceptionTranslationFilter@58052571, org.springframework.security.web.access.intercept.AuthorizationFilter@56e589e5]
+2023-03-03T19:30:07.229+05:00  INFO 11948 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-03-03T19:30:07.239+05:00  INFO 11948 --- [main] com.example.ManagementApplication        : Started ManagementApplication in 6.808 seconds (process running for 7.833)
+2023-03-03T19:30:07.283+05:00  INFO 11948 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.5.1 by Redgate
+2023-03-03T19:30:07.283+05:00  INFO 11948 --- [main] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.5.1
+2023-03-03T19:30:07.283+05:00  INFO 11948 --- [main] o.f.c.internal.license.VersionPrinter    : 
+2023-03-03T19:30:07.298+05:00  INFO 11948 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/Management (PostgreSQL 15.1)
+2023-03-03T19:30:07.333+05:00  INFO 11948 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.020s)
+2023-03-03T19:30:07.345+05:00  INFO 11948 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 3
+2023-03-03T19:30:07.345+05:00  INFO 11948 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2023-03-03T19:31:04.192+05:00  INFO 11948 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-03T19:31:04.192+05:00  INFO 11948 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-03T19:31:04.194+05:00  INFO 11948 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-03-03T19:31:04.262+05:00  INFO 11948 --- [http-nio-8081-exec-1] c.example.controller.RequestController   : Delete Request --> 402880e586a786d40186a787861a0001
+2023-03-03T19:31:56.572+05:00  INFO 11948 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-03T19:31:56.575+05:00  INFO 11948 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-03T19:31:56.583+05:00  INFO 11948 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-03T19:32:14.446+05:00  INFO 9928 --- [main] com.example.ManagementApplication        : Starting ManagementApplication using Java 19.0.2 with PID 9928 (C:\Users\Ma'ruf Raufov\Downloads\Telegram Desktop\Management\Management\src\main\resources\Management\Management\target\classes started by Ma'ruf Raufov in C:\Users\Ma'ruf Raufov\Downloads\Telegram Desktop\Management\Management\src\main\resources\Management\Management)
+2023-03-03T19:32:14.461+05:00 DEBUG 9928 --- [main] com.example.ManagementApplication        : Running with Spring Boot v3.0.1, Spring v6.0.3
+2023-03-03T19:32:14.463+05:00  INFO 9928 --- [main] com.example.ManagementApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-03-03T19:32:15.438+05:00  INFO 9928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-03T19:32:15.516+05:00  INFO 9928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 8 JPA repository interfaces.
+2023-03-03T19:32:16.137+05:00  INFO 9928 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-03-03T19:32:16.148+05:00  INFO 9928 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-03T19:32:16.149+05:00  INFO 9928 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-03-03T19:32:16.288+05:00  INFO 9928 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-03T19:32:16.289+05:00  INFO 9928 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1742 ms
+2023-03-03T19:32:16.445+05:00  INFO 9928 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-03T19:32:16.495+05:00  INFO 9928 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-03-03T19:32:16.675+05:00  WARN 9928 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-03-03T19:32:16.786+05:00  INFO 9928 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-03T19:32:16.948+05:00  INFO 9928 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@33a47707
+2023-03-03T19:32:16.950+05:00  INFO 9928 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-03T19:32:16.992+05:00  INFO 9928 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-03-03T19:32:17.224+05:00  WARN 9928 --- [main] org.hibernate.id.UUIDHexGenerator        : HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2023-03-03T19:32:18.170+05:00  INFO 9928 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-03T19:32:18.179+05:00  INFO 9928 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-03T19:32:18.728+05:00 DEBUG 9928 --- [main] com.example.config.JwtTokenFilter        : Filter 'jwtTokenFilter' configured for use
+2023-03-03T19:32:19.321+05:00  WARN 9928 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-03T19:32:20.183+05:00  INFO 9928 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@606c2e4b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1b914e36, org.springframework.security.web.context.SecurityContextHolderFilter@3a9a12a1, org.springframework.security.web.header.HeaderWriterFilter@29422e61, org.springframework.security.web.authentication.logout.LogoutFilter@4b38d912, com.example.config.JwtTokenFilter@7136ad9a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@22a89db, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4867f5cf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@29f3ea39, org.springframework.security.web.access.ExceptionTranslationFilter@4ff3ca23, org.springframework.security.web.access.intercept.AuthorizationFilter@6ed2aa8a]
+2023-03-03T19:32:20.566+05:00  INFO 9928 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-03-03T19:32:20.575+05:00  INFO 9928 --- [main] com.example.ManagementApplication        : Started ManagementApplication in 6.636 seconds (process running for 7.545)
+2023-03-03T19:32:20.617+05:00  INFO 9928 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.5.1 by Redgate
+2023-03-03T19:32:20.618+05:00  INFO 9928 --- [main] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.5.1
+2023-03-03T19:32:20.618+05:00  INFO 9928 --- [main] o.f.c.internal.license.VersionPrinter    : 
+2023-03-03T19:32:20.631+05:00  INFO 9928 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/Management (PostgreSQL 15.1)
+2023-03-03T19:32:20.671+05:00  INFO 9928 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.022s)
+2023-03-03T19:32:20.681+05:00  INFO 9928 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 3
+2023-03-03T19:32:20.682+05:00  INFO 9928 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2023-03-03T19:32:39.778+05:00  INFO 9928 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-03T19:32:39.845+05:00  INFO 9928 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-03T19:32:39.880+05:00  INFO 9928 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 30 ms
+2023-03-03T19:32:44.258+05:00  INFO 9928 --- [http-nio-8081-exec-1] c.example.controller.RequestController   : Add Request --> RequestDTO(id=null, placeName=12 kvartal, districtId=6, productId=402880e586a74bf20186a772966f0003)
+2023-03-03T19:33:17.058+05:00  INFO 9928 --- [http-nio-8081-exec-2] c.example.controller.RequestController   : Delete Request --> 402880e586a7e34e0186a7e3c6530000
+2023-03-03T19:33:31.502+05:00  INFO 9928 --- [http-nio-8081-exec-4] c.example.controller.RequestController   : Add Request --> RequestDTO(id=null, placeName=12 kvartal, districtId=6, productId=402880e586a74bf20186a772966f0003)
+2023-03-03T19:34:06.310+05:00  INFO 9928 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-03T19:34:06.559+05:00  INFO 9928 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-03T19:34:06.919+05:00  INFO 9928 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-03T19:34:26.708+05:00  INFO 5836 --- [main] com.example.ManagementApplication        : Starting ManagementApplication using Java 19.0.2 with PID 5836 (C:\Users\Ma'ruf Raufov\Downloads\Telegram Desktop\Management\Management\src\main\resources\Management\Management\target\classes started by Ma'ruf Raufov in C:\Users\Ma'ruf Raufov\Downloads\Telegram Desktop\Management\Management\src\main\resources\Management\Management)
+2023-03-03T19:34:26.729+05:00 DEBUG 5836 --- [main] com.example.ManagementApplication        : Running with Spring Boot v3.0.1, Spring v6.0.3
+2023-03-03T19:34:26.729+05:00  INFO 5836 --- [main] com.example.ManagementApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-03-03T19:34:27.645+05:00  INFO 5836 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-03T19:34:27.721+05:00  INFO 5836 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 8 JPA repository interfaces.
+2023-03-03T19:34:28.297+05:00  INFO 5836 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-03-03T19:34:28.306+05:00  INFO 5836 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-03T19:34:28.307+05:00  INFO 5836 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-03-03T19:34:28.401+05:00  INFO 5836 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-03T19:34:28.401+05:00  INFO 5836 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1605 ms
+2023-03-03T19:34:28.526+05:00  INFO 5836 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-03T19:34:28.585+05:00  INFO 5836 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-03-03T19:34:28.756+05:00  WARN 5836 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-03-03T19:34:28.863+05:00  INFO 5836 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-03T19:34:29.034+05:00  INFO 5836 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3d033453
+2023-03-03T19:34:29.036+05:00  INFO 5836 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-03T19:34:29.085+05:00  INFO 5836 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-03-03T19:34:29.307+05:00  WARN 5836 --- [main] org.hibernate.id.UUIDHexGenerator        : HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2023-03-03T19:34:30.434+05:00  INFO 5836 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-03T19:34:30.444+05:00  INFO 5836 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-03T19:34:30.992+05:00 DEBUG 5836 --- [main] com.example.config.JwtTokenFilter        : Filter 'jwtTokenFilter' configured for use
+2023-03-03T19:34:31.587+05:00  WARN 5836 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-03T19:34:32.455+05:00  INFO 5836 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4842a683, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@65a03c19, org.springframework.security.web.context.SecurityContextHolderFilter@67c020c8, org.springframework.security.web.header.HeaderWriterFilter@2c6ed95a, org.springframework.security.web.authentication.logout.LogoutFilter@1b914e36, com.example.config.JwtTokenFilter@70fe33fa, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@66464f27, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@75392381, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5f455d91, org.springframework.security.web.access.ExceptionTranslationFilter@6eacf3be, org.springframework.security.web.access.intercept.AuthorizationFilter@44ad3c5e]
+2023-03-03T19:34:32.785+05:00  INFO 5836 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-03-03T19:34:32.796+05:00  INFO 5836 --- [main] com.example.ManagementApplication        : Started ManagementApplication in 6.615 seconds (process running for 7.386)
+2023-03-03T19:34:32.840+05:00  INFO 5836 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.5.1 by Redgate
+2023-03-03T19:34:32.840+05:00  INFO 5836 --- [main] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.5.1
+2023-03-03T19:34:32.840+05:00  INFO 5836 --- [main] o.f.c.internal.license.VersionPrinter    : 
+2023-03-03T19:34:32.854+05:00  INFO 5836 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/Management (PostgreSQL 15.1)
+2023-03-03T19:34:32.894+05:00  INFO 5836 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.022s)
+2023-03-03T19:34:32.905+05:00  INFO 5836 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 3
+2023-03-03T19:34:32.905+05:00  INFO 5836 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2023-03-03T19:35:07.599+05:00  INFO 5836 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-03T19:35:07.600+05:00  INFO 5836 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-03T19:35:07.602+05:00  INFO 5836 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-03T19:35:07.660+05:00  INFO 5836 --- [http-nio-8081-exec-1] c.example.controller.RequestController   : Delete Request --> 402880e586a7e34e0186a7e470720001
+2023-03-03T19:35:18.730+05:00  INFO 5836 --- [http-nio-8081-exec-7] c.example.controller.RequestController   : Add Request --> RequestDTO(id=null, placeName=12 kvartal, districtId=6, productId=402880e586a74bf20186a772966f0003)
+2023-03-03T19:37:06.999+05:00  INFO 5836 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-03T19:37:07.002+05:00  INFO 5836 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-03T19:37:07.005+05:00  INFO 5836 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-03T19:37:14.312+05:00  INFO 15728 --- [main] com.example.ManagementApplication        : Starting ManagementApplication using Java 19.0.2 with PID 15728 (C:\Users\Ma'ruf Raufov\Downloads\Telegram Desktop\Management\Management\src\main\resources\Management\Management\target\classes started by Ma'ruf Raufov in C:\Users\Ma'ruf Raufov\Downloads\Telegram Desktop\Management\Management\src\main\resources\Management\Management)
+2023-03-03T19:37:14.326+05:00 DEBUG 15728 --- [main] com.example.ManagementApplication        : Running with Spring Boot v3.0.1, Spring v6.0.3
+2023-03-03T19:37:14.327+05:00  INFO 15728 --- [main] com.example.ManagementApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-03-03T19:37:15.610+05:00  INFO 15728 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-03T19:37:15.698+05:00  INFO 15728 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79 ms. Found 8 JPA repository interfaces.
+2023-03-03T19:37:16.272+05:00  INFO 15728 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-03-03T19:37:16.282+05:00  INFO 15728 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-03T19:37:16.282+05:00  INFO 15728 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-03-03T19:37:16.371+05:00  INFO 15728 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-03T19:37:16.371+05:00  INFO 15728 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1969 ms
+2023-03-03T19:37:16.497+05:00  INFO 15728 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-03T19:37:16.555+05:00  INFO 15728 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-03-03T19:37:16.748+05:00  WARN 15728 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-03-03T19:37:16.852+05:00  INFO 15728 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-03T19:37:17.019+05:00  INFO 15728 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@62cd562d
+2023-03-03T19:37:17.021+05:00  INFO 15728 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-03T19:37:17.070+05:00  INFO 15728 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-03-03T19:37:17.323+05:00  WARN 15728 --- [main] org.hibernate.id.UUIDHexGenerator        : HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2023-03-03T19:37:18.296+05:00  INFO 15728 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-03T19:37:18.305+05:00  INFO 15728 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-03T19:37:18.840+05:00 DEBUG 15728 --- [main] com.example.config.JwtTokenFilter        : Filter 'jwtTokenFilter' configured for use
+2023-03-03T19:37:19.429+05:00  WARN 15728 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-03T19:37:20.332+05:00  INFO 15728 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5a90ea5c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@537e52de, org.springframework.security.web.context.SecurityContextHolderFilter@e8ef60b, org.springframework.security.web.header.HeaderWriterFilter@75392381, org.springframework.security.web.authentication.logout.LogoutFilter@7dcc6679, com.example.config.JwtTokenFilter@44cab872, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6d0d5147, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a370c7c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@59eff566, org.springframework.security.web.access.ExceptionTranslationFilter@3d3e9163, org.springframework.security.web.access.intercept.AuthorizationFilter@16c3e494]
+2023-03-03T19:37:20.727+05:00  INFO 15728 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-03-03T19:37:20.736+05:00  INFO 15728 --- [main] com.example.ManagementApplication        : Started ManagementApplication in 6.858 seconds (process running for 7.828)
+2023-03-03T19:37:20.778+05:00  INFO 15728 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.5.1 by Redgate
+2023-03-03T19:37:20.778+05:00  INFO 15728 --- [main] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.5.1
+2023-03-03T19:37:20.778+05:00  INFO 15728 --- [main] o.f.c.internal.license.VersionPrinter    : 
+2023-03-03T19:37:20.792+05:00  INFO 15728 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/Management (PostgreSQL 15.1)
+2023-03-03T19:37:20.830+05:00  INFO 15728 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.022s)
+2023-03-03T19:37:20.840+05:00  INFO 15728 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 3
+2023-03-03T19:37:20.840+05:00  INFO 15728 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2023-03-03T19:40:02.155+05:00  INFO 15728 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-03T19:40:02.155+05:00  INFO 15728 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-03T19:40:02.157+05:00  INFO 15728 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-03T19:41:06.026+05:00  INFO 15728 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-03T19:41:06.030+05:00  INFO 15728 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-03T19:41:06.033+05:00  INFO 15728 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-03T19:41:13.656+05:00  INFO 8028 --- [main] com.example.ManagementApplication        : Starting ManagementApplication using Java 19.0.2 with PID 8028 (C:\Users\Ma'ruf Raufov\Downloads\Telegram Desktop\Management\Management\src\main\resources\Management\Management\target\classes started by Ma'ruf Raufov in C:\Users\Ma'ruf Raufov\Downloads\Telegram Desktop\Management\Management\src\main\resources\Management\Management)
+2023-03-03T19:41:13.678+05:00 DEBUG 8028 --- [main] com.example.ManagementApplication        : Running with Spring Boot v3.0.1, Spring v6.0.3
+2023-03-03T19:41:13.680+05:00  INFO 8028 --- [main] com.example.ManagementApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-03-03T19:41:14.788+05:00  INFO 8028 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-03T19:41:14.870+05:00  INFO 8028 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74 ms. Found 8 JPA repository interfaces.
+2023-03-03T19:41:15.475+05:00  INFO 8028 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-03-03T19:41:15.485+05:00  INFO 8028 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-03T19:41:15.485+05:00  INFO 8028 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-03-03T19:41:15.577+05:00  INFO 8028 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-03T19:41:15.577+05:00  INFO 8028 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1782 ms
+2023-03-03T19:41:15.715+05:00  INFO 8028 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-03T19:41:15.766+05:00  INFO 8028 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-03-03T19:41:15.946+05:00  WARN 8028 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-03-03T19:41:16.047+05:00  INFO 8028 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-03T19:41:16.216+05:00  INFO 8028 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4d290757
+2023-03-03T19:41:16.218+05:00  INFO 8028 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-03T19:41:16.261+05:00  INFO 8028 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-03-03T19:41:16.490+05:00  WARN 8028 --- [main] org.hibernate.id.UUIDHexGenerator        : HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2023-03-03T19:41:17.484+05:00  INFO 8028 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-03T19:41:17.494+05:00  INFO 8028 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-03T19:41:18.042+05:00 DEBUG 8028 --- [main] com.example.config.JwtTokenFilter        : Filter 'jwtTokenFilter' configured for use
+2023-03-03T19:41:18.645+05:00  WARN 8028 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-03T19:41:19.671+05:00  INFO 8028 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@57dd4bc9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@47897093, org.springframework.security.web.context.SecurityContextHolderFilter@69815126, org.springframework.security.web.header.HeaderWriterFilter@3d837af7, org.springframework.security.web.authentication.logout.LogoutFilter@54c9c09c, com.example.config.JwtTokenFilter@4fb42efa, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@65f8933b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@29422e61, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@33e19be9, org.springframework.security.web.access.ExceptionTranslationFilter@4ac7927a, org.springframework.security.web.access.intercept.AuthorizationFilter@626e5554]
+2023-03-03T19:41:20.008+05:00  INFO 8028 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-03-03T19:41:20.018+05:00  INFO 8028 --- [main] com.example.ManagementApplication        : Started ManagementApplication in 6.95 seconds (process running for 7.894)
+2023-03-03T19:41:20.065+05:00  INFO 8028 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.5.1 by Redgate
+2023-03-03T19:41:20.066+05:00  INFO 8028 --- [main] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.5.1
+2023-03-03T19:41:20.066+05:00  INFO 8028 --- [main] o.f.c.internal.license.VersionPrinter    : 
+2023-03-03T19:41:20.080+05:00  INFO 8028 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/Management (PostgreSQL 15.1)
+2023-03-03T19:41:20.120+05:00  INFO 8028 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.025s)
+2023-03-03T19:41:20.133+05:00  INFO 8028 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 3
+2023-03-03T19:41:20.134+05:00  INFO 8028 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2023-03-03T19:41:44.114+05:00  INFO 8028 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-03T19:41:44.114+05:00  INFO 8028 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-03T19:41:44.117+05:00  INFO 8028 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-03-03T19:41:48.353+05:00  INFO 8028 --- [http-nio-8081-exec-3] c.example.controller.RequestController   : Delete Request --> 402880e586a7e34e0186a7e470720001
+2023-03-03T19:41:48.377+05:00  WARN 8028 --- [http-nio-8081-exec-3] c.e.e.h.ExceptionHandlerController       : Not Found Request
+2023-03-03T19:42:08.659+05:00  INFO 8028 --- [http-nio-8081-exec-9] c.example.controller.RequestController   : Delete Request --> 402880e586a7e5520186a7e613890000
+2023-03-03T19:49:39.047+05:00  INFO 8028 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-03T19:49:39.050+05:00  INFO 8028 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-03T19:49:39.054+05:00  INFO 8028 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-03T19:49:45.998+05:00  INFO 10992 --- [main] com.example.ManagementApplication        : Starting ManagementApplication using Java 19.0.2 with PID 10992 (C:\Users\Ma'ruf Raufov\Downloads\Telegram Desktop\Management\Management\src\main\resources\Management\Management\target\classes started by Ma'ruf Raufov in C:\Users\Ma'ruf Raufov\Downloads\Telegram Desktop\Management\Management\src\main\resources\Management\Management)
+2023-03-03T19:49:46.012+05:00 DEBUG 10992 --- [main] com.example.ManagementApplication        : Running with Spring Boot v3.0.1, Spring v6.0.3
+2023-03-03T19:49:46.013+05:00  INFO 10992 --- [main] com.example.ManagementApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-03-03T19:49:47.119+05:00  INFO 10992 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-03T19:49:47.197+05:00  INFO 10992 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 8 JPA repository interfaces.
+2023-03-03T19:49:47.764+05:00  INFO 10992 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-03-03T19:49:47.775+05:00  INFO 10992 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-03T19:49:47.775+05:00  INFO 10992 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-03-03T19:49:47.861+05:00  INFO 10992 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-03T19:49:47.862+05:00  INFO 10992 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1770 ms
+2023-03-03T19:49:47.981+05:00  INFO 10992 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-03T19:49:48.040+05:00  INFO 10992 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-03-03T19:49:48.211+05:00  WARN 10992 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-03-03T19:49:48.311+05:00  INFO 10992 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-03T19:49:48.480+05:00  INFO 10992 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@62cd562d
+2023-03-03T19:49:48.482+05:00  INFO 10992 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-03T19:49:48.531+05:00  INFO 10992 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-03-03T19:49:48.765+05:00  WARN 10992 --- [main] org.hibernate.id.UUIDHexGenerator        : HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2023-03-03T19:49:49.754+05:00  INFO 10992 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-03T19:49:49.762+05:00  INFO 10992 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-03T19:49:50.302+05:00 DEBUG 10992 --- [main] com.example.config.JwtTokenFilter        : Filter 'jwtTokenFilter' configured for use
+2023-03-03T19:49:50.996+05:00  WARN 10992 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-03T19:49:51.825+05:00  INFO 10992 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3217e970, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6d0d5147, org.springframework.security.web.context.SecurityContextHolderFilter@297da2c3, org.springframework.security.web.header.HeaderWriterFilter@6ea4b4b2, org.springframework.security.web.authentication.logout.LogoutFilter@2c6ed95a, com.example.config.JwtTokenFilter@2db75e32, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2b9bacb8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2850fe85, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1a370c7c, org.springframework.security.web.access.ExceptionTranslationFilter@3c5797c6, org.springframework.security.web.access.intercept.AuthorizationFilter@13198b8e]
+2023-03-03T19:49:52.175+05:00  INFO 10992 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-03-03T19:49:52.184+05:00  INFO 10992 --- [main] com.example.ManagementApplication        : Started ManagementApplication in 6.666 seconds (process running for 7.481)
+2023-03-03T19:49:52.226+05:00  INFO 10992 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.5.1 by Redgate
+2023-03-03T19:49:52.226+05:00  INFO 10992 --- [main] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.5.1
+2023-03-03T19:49:52.226+05:00  INFO 10992 --- [main] o.f.c.internal.license.VersionPrinter    : 
+2023-03-03T19:49:52.241+05:00  INFO 10992 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/Management (PostgreSQL 15.1)
+2023-03-03T19:49:52.279+05:00  INFO 10992 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.023s)
+2023-03-03T19:49:52.292+05:00  INFO 10992 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 3
+2023-03-03T19:49:52.293+05:00  INFO 10992 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
