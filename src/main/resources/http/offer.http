@@ -1,0 +1,9 @@
+### Add Offer
+POST http://localhost:8081/offer/add_offer
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2Nzc3NjQzNDcsInBob25lIjoiMDAwMCIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjc3ODUwNzQ3LCJpc3MiOiJZb3VUdWJlIn0.PD6EweG2QTsJiYNS3dact7ink1mcJAhJO1RZDnYibvYPpiQWuEVsAMRi8HQuo8KuP-xcceY8UYhqvLB5dKBtqg
+
+{
+  "placeName": "Toshkent",
+  "productId": "402880e586a2fb860186a2feeafb0003"
+}

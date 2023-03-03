@@ -1,0 +1,21 @@
+### Profile List
+GET http://localhost:8081/profile/profile_list
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2Nzc3NjQ0MTIsInBob25lIjoiMDAwMCIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjc3ODUwODEyLCJpc3MiOiJZb3VUdWJlIn0.iaoTBqi1lpSldnBefCFOwUTdvGFr5U-fzIrSxH5x3KL47RV_lTUhdHqdwLj6LUK9vEeMLzvIhA20y23bJJGcYg
+
+### Profile Delete
+DELETE http://localhost:8081/profile/delete_profile/6
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2Nzc3NjQ0MTIsInBob25lIjoiMDAwMCIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjc3ODUwODEyLCJpc3MiOiJZb3VUdWJlIn0.iaoTBqi1lpSldnBefCFOwUTdvGFr5U-fzIrSxH5x3KL47RV_lTUhdHqdwLj6LUK9vEeMLzvIhA20y23bJJGcYg
+
+
+###  Profile Update
+PUT http://localhost:8081/profile/update_profile/3
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2Nzc3NjQ0MTIsInBob25lIjoiMDAwMCIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjc3ODUwODEyLCJpc3MiOiJZb3VUdWJlIn0.iaoTBqi1lpSldnBefCFOwUTdvGFr5U-fzIrSxH5x3KL47RV_lTUhdHqdwLj6LUK9vEeMLzvIhA20y23bJJGcYg
+
+{
+  "name": "Gulixon ",
+  "surname": "Rahmiddinova",
+  "phone": "1555523",
+  "password": "88888",
+  "email": "gullllll@gmail.com"
+}

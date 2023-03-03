@@ -1,0 +1,34 @@
+### Region ###
+POST http://localhost:8081/region/add_region
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2Nzc3NjQ0MTIsInBob25lIjoiMDAwMCIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjc3ODUwODEyLCJpc3MiOiJZb3VUdWJlIn0.iaoTBqi1lpSldnBefCFOwUTdvGFr5U-fzIrSxH5x3KL47RV_lTUhdHqdwLj6LUK9vEeMLzvIhA20y23bJJGcYg
+
+{
+  "name": "Mazgi"
+}
+
+
+
+### Region list
+GET http://localhost:8081/region/region_list
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2Nzc3NjQ0MTIsInBob25lIjoiMDAwMCIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjc3ODUwODEyLCJpc3MiOiJZb3VUdWJlIn0.iaoTBqi1lpSldnBefCFOwUTdvGFr5U-fzIrSxH5x3KL47RV_lTUhdHqdwLj6LUK9vEeMLzvIhA20y23bJJGcYg
+
+
+
+### Region update
+PUT http://localhost:8081/region/region_update/10
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2Nzc3NjA4NDksInBob25lIjoiMDAwMCIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjc3ODQ3MjQ5LCJpc3MiOiJZb3VUdWJlIn0.sbwssA1GjlEbhqYAI2x8HVkpDxKqpF0uJvmtY3Tbyx3tshfN0MayFQEYy0awDiKC6Ra0vrB_xKMCBTWLILPvBg
+
+{
+  "name": "Mazgios"
+}
+
+
+### Region delete
+DELETE http://localhost:8081/region/region_delete/10
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2Nzc3NjA4NDksInBob25lIjoiMDAwMCIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjc3ODQ3MjQ5LCJpc3MiOiJZb3VUdWJlIn0.sbwssA1GjlEbhqYAI2x8HVkpDxKqpF0uJvmtY3Tbyx3tshfN0MayFQEYy0awDiKC6Ra0vrB_xKMCBTWLILPvBg
+
+
+
+

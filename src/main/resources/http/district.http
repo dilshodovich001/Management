@@ -1,0 +1,29 @@
+### District ###
+POST http://localhost:8081/district/add_district
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2Nzc3NjA4NDksInBob25lIjoiMDAwMCIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjc3ODQ3MjQ5LCJpc3MiOiJZb3VUdWJlIn0.sbwssA1GjlEbhqYAI2x8HVkpDxKqpF0uJvmtY3Tbyx3tshfN0MayFQEYy0awDiKC6Ra0vrB_xKMCBTWLILPvBg
+
+{
+  "name": "Guliston",
+  "regionId":7
+}
+
+
+### District list
+GET http://localhost:8081/district/district_list
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2Nzc3NjA4NDksInBob25lIjoiMDAwMCIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjc3ODQ3MjQ5LCJpc3MiOiJZb3VUdWJlIn0.sbwssA1GjlEbhqYAI2x8HVkpDxKqpF0uJvmtY3Tbyx3tshfN0MayFQEYy0awDiKC6Ra0vrB_xKMCBTWLILPvBg
+
+### District update
+PUT http://localhost:8081/district/district_update/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2Nzc3NjA4NDksInBob25lIjoiMDAwMCIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjc3ODQ3MjQ5LCJpc3MiOiJZb3VUdWJlIn0.sbwssA1GjlEbhqYAI2x8HVkpDxKqpF0uJvmtY3Tbyx3tshfN0MayFQEYy0awDiKC6Ra0vrB_xKMCBTWLILPvBg
+
+{
+  "name": "Yunusobod"
+}
+
+
+### District delete
+DELETE http://localhost:8081/district/district_delete/5
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2Nzc3NjA4NDksInBob25lIjoiMDAwMCIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjc3ODQ3MjQ5LCJpc3MiOiJZb3VUdWJlIn0.sbwssA1GjlEbhqYAI2x8HVkpDxKqpF0uJvmtY3Tbyx3tshfN0MayFQEYy0awDiKC6Ra0vrB_xKMCBTWLILPvBg
+

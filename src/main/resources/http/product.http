@@ -1,0 +1,32 @@
+### Product ###
+POST http://localhost:8081/product/add_product
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2Nzc3NjQ0MTIsInBob25lIjoiMDAwMCIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjc3ODUwODEyLCJpc3MiOiJZb3VUdWJlIn0.iaoTBqi1lpSldnBefCFOwUTdvGFr5U-fzIrSxH5x3KL47RV_lTUhdHqdwLj6LUK9vEeMLzvIhA20y23bJJGcYg
+
+{
+  "productName": "Mevalar"
+}
+
+### Product list ###
+GET http://localhost:8081/product/product_list
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2Nzc3NjQ0MTIsInBob25lIjoiMDAwMCIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjc3ODUwODEyLCJpc3MiOiJZb3VUdWJlIn0.iaoTBqi1lpSldnBefCFOwUTdvGFr5U-fzIrSxH5x3KL47RV_lTUhdHqdwLj6LUK9vEeMLzvIhA20y23bJJGcYg
+
+
+### Update product
+PUT http://localhost:8081/product/update_product/402880e586a2fb860186a2feeafb0003
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2Nzc3NjQ0MTIsInBob25lIjoiMDAwMCIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjc3ODUwODEyLCJpc3MiOiJZb3VUdWJlIn0.iaoTBqi1lpSldnBefCFOwUTdvGFr5U-fzIrSxH5x3KL47RV_lTUhdHqdwLj6LUK9vEeMLzvIhA20y23bJJGcYg
+
+{
+  "productName": "Koptoklar"
+}
+
+
+### Delete
+DELETE http://localhost:8081/product/delete_product/402880e586a2fb860186a2fe0c9a0002
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2Nzc3NjQ0MTIsInBob25lIjoiMDAwMCIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjc3ODUwODEyLCJpc3MiOiJZb3VUdWJlIn0.iaoTBqi1lpSldnBefCFOwUTdvGFr5U-fzIrSxH5x3KL47RV_lTUhdHqdwLj6LUK9vEeMLzvIhA20y23bJJGcYg
+
+
+
+
+

@@ -1,0 +1,30 @@
+### Registration ###
+POST http://localhost:8081/auth/registration
+Content-Type: application/json
+
+{
+  "name": "Murod",
+  "surname": "Usenov",
+  "phone": "888839s244",
+  "password": "8838s89244",
+  "email": "5554@1m3sail.com"
+}
+
+
+### Authorization user token
+POST localhost:8081/auth/login
+Content-Type: application/json
+
+{
+  "phone": "8888",
+  "password": "8888"
+}
+
+### Authorization Admin token
+POST localhost:8081/auth/login
+Content-Type: application/json
+
+{
+  "phone": "0000",
+  "password": "0000"
+}
