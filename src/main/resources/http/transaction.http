@@ -22,5 +22,8 @@ Content-Type: application/json
 GET http://localhost:8081/transaction/get_list
 Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2Nzc4NDc2ODEsInBob25lIjoiMDAwMCIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjc3OTM0MDgxLCJpc3MiOiJZb3VUdWJlIn0.1KggU20YLzJU_1bnIJAP2hvwgGaqkKX1qsrSQZKvw3enpzpv7e05s-8xO_zE8cBx-3evsDeMYtmM4zwKJPsdpw
 
-### min score 50
-// 10 * 5
+
+
+### Delete
+DELETE http://localhost:8081/transaction/delete/{{id}}
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2Nzc4NDc2ODEsInBob25lIjoiMDAwMCIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjc3OTM0MDgxLCJpc3MiOiJZb3VUdWJlIn0.1KggU20YLzJU_1bnIJAP2hvwgGaqkKX1qsrSQZKvw3enpzpv7e05s-8xO_zE8cBx-3evsDeMYtmM4zwKJPsdpw
