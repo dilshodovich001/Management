@@ -47,4 +47,19 @@ public class CarrierService {
         }
         return carrierRegionPlaceRepository.carrierNameList(regionName);
     }
+
+    public void delete(Integer id) {
+        get(id);
+         carrierRegionPlaceRepository.deleteById(id);
+    }
+
+    public Boolean update(Integer id, CarrierDTO dto) {
+        get(id);
+        return carrierRegionPlaceRepository.update(id,dto.getCarrierId());
+    }
+    public void get(Integer id) {
+         carrierRegionPlaceRepository.findById(id).
+                orElseThrow(() -> new ItemNotFoundException
+                        ("Not Found"));
+    }
 }

@@ -22,4 +22,9 @@ public interface ProfileRepository extends CrudRepository<ProfileEntity, Integer
 
     @Query("from ProfileEntity p where p.id = ?1 and p.role ='ROLE_CARRIER'")
     ProfileEntity findByIdAndRole(Integer id);
+
+    @Transactional
+    @Modifying
+    @Query("update ProfileEntity p set p.visible = false where p.id = ?1")
+    void deleteProfile(Integer id);
 }

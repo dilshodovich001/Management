@@ -1,15 +1,18 @@
 package com.example.controller;
 
+import com.example.dto.EvaluateDTO;
 import com.example.dto.TransactionDTO;
+import com.example.mapper.TransactionMapper;
 import com.example.service.TransactionService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Slf4j
 @RequiredArgsConstructor
@@ -24,6 +27,22 @@ public class TransactionController {
             ){
         log.info("Add Transaction --> " + dto);
         String response = transactionService.addTransaction(dto);
+        return ResponseEntity.ok(response);
+    }
+    @PutMapping("/evaluate_transaction")
+    public ResponseEntity<Boolean> evaluateTransaction(
+           @RequestBody EvaluateDTO dto
+    ){
+        log.info("Evaluate Transaction --> "+ dto);
+        Boolean response = transactionService
+                .evaluateTransaction(dto);
+        return ResponseEntity.ok(response);
+    }
+
+    @GetMapping("/get_list")
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    public ResponseEntity<List<TransactionMapper>> getList(){
+        List<TransactionMapper> response = transactionService.getList();
         return ResponseEntity.ok(response);
     }
 }

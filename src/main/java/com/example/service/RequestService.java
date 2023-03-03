@@ -1,6 +1,7 @@
 package com.example.service;
 
 import com.example.dto.RequestDTO;
+import com.example.entity.DistrictEntity;
 import com.example.entity.RequestEntity;
 import com.example.exceptions.ItemAlreadyExistException;
 import com.example.exceptions.ItemNotFoundException;
@@ -14,10 +15,15 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class RequestService {
     private final RequestRepository requestRepository;
+    private final DistrictService districtService;
 
     public RequestDTO addRequest(RequestDTO dto) {
         RequestEntity exists = requestRepository.findByProductIdAndDistrictId(dto.getProductId(),
                 dto.getDistrictId());
+        DistrictEntity district = districtService.get(dto.getDistrictId());
+        if (district == null) {
+            throw new ItemNotFoundException("Not found District");
+        }
         if (exists != null) {
             throw new ItemAlreadyExistException("Already exists");
         }

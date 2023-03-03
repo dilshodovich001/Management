@@ -19,11 +19,11 @@ public class TransactionEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     @Column
-    private Integer ball;
-    @Column(name = "carrier_name")
+    private Integer bal;
+    @Column(name = "carrier_id")
     private Integer carrierId;
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "carrier_name", insertable = false, updatable = false)
+    @JoinColumn(name = "carrier_id", insertable = false, updatable = false)
     private ProfileEntity carrier;
 
     @Column(name = "request_id")

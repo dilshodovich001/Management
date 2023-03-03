@@ -16,3 +16,17 @@ Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2Nzc3NjQzNDcsInBob25lIjoiM
 ### Carrier Name list
 GET http://localhost:8081/carrier/get_carrier_for_region/Surxondaryo
 Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2Nzc3NjQzNDcsInBob25lIjoiMDAwMCIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjc3ODUwNzQ3LCJpc3MiOiJZb3VUdWJlIn0.PD6EweG2QTsJiYNS3dact7ink1mcJAhJO1RZDnYibvYPpiQWuEVsAMRi8HQuo8KuP-xcceY8UYhqvLB5dKBtqg
+
+
+### Delete
+DELETE http://localhost:8081/carrier/delete/1
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2Nzc3NjQzNDcsInBob25lIjoiMDAwMCIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjc3ODUwNzQ3LCJpc3MiOiJZb3VUdWJlIn0.PD6EweG2QTsJiYNS3dact7ink1mcJAhJO1RZDnYibvYPpiQWuEVsAMRi8HQuo8KuP-xcceY8UYhqvLB5dKBtqg
+
+### Update
+PUT http://localhost:8081/carrier/update/{{id}}
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2Nzc3NjQzNDcsInBob25lIjoiMDAwMCIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjc3ODUwNzQ3LCJpc3MiOiJZb3VUdWJlIn0.PD6EweG2QTsJiYNS3dact7ink1mcJAhJO1RZDnYibvYPpiQWuEVsAMRi8HQuo8KuP-xcceY8UYhqvLB5dKBtqg
+
+{
+  "carrierId": 2
+}

@@ -15,6 +15,7 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+
 @Slf4j
 @Service
 @RequiredArgsConstructor
@@ -56,13 +57,13 @@ public class DistrictService {
 
     public DistrictDTO updateAdmin(Integer id, DistrictDTO dto) {
         get(id);
-        districtRepository.update(id,dto.getName());
+        districtRepository.update(id, dto.getName());
         return dto;
     }
 
-    private void get(Integer id) {
-        districtRepository.findById(id).orElseThrow(() ->
-                new ItemNotFoundException("Not found District") );
+    public DistrictEntity get(Integer id) {
+        return districtRepository.findById(id).orElseThrow(() ->
+                new ItemNotFoundException("Not found District"));
     }
 
     public void delete(Integer id) {

@@ -71,7 +71,7 @@ public class ProfileService {
 
     public void delete(Integer id) {
         get(id);
-        profileRepository.deleteById(id);
+        profileRepository.deleteProfile(id);
     }
 
     public ProfileEntity get(Integer id) {

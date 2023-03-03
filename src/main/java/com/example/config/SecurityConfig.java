@@ -49,6 +49,8 @@ public class SecurityConfig {
         http.cors().disable().csrf().disable();
         http.authorizeHttpRequests()
                 .requestMatchers("/auth/**").permitAll()
+                .requestMatchers("/transaction/**").permitAll()
+                .requestMatchers("/request/**").permitAll()
                 .requestMatchers(AUTH_WHITELIST).permitAll()
                 .anyRequest().authenticated().and().addFilterBefore(jwtTokenFilter, UsernamePasswordAuthenticationFilter.class);
         http.exceptionHandling().authenticationEntryPoint(authEntryPointJwt);

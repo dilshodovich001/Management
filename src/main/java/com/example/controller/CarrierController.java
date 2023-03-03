@@ -46,23 +46,22 @@ public class CarrierController {
         List<CarrierRegionMapper> response = carrierService.getCarriersForRegion(regionName);
         return ResponseEntity.ok(response);
     }
-//
-//    @PutMapping("/update_profile/{id}")
-//    @PreAuthorize("hasRole('ROLE_ADMIN')")
-//    public ResponseEntity<ProfileDTO> update(@PathVariable Integer id,
-//                                         @Valid @RequestBody ProfileDTO profileDTO) {
-//        log.info("Update Profile --> " + id + " dto " + profileDTO);
-//        ProfileDTO response = profileService.updateAdmin(id, profileDTO);
-//        return ResponseEntity.ok(response);
-//    }
-//
-//
-//    @DeleteMapping("/delete_profile/{id}")
-//    @PreAuthorize("hasRole('ROLE_ADMIN')")
-//    public ResponseEntity<?> delete(@PathVariable("id") Integer id) {
-//        log.info("Delete Profile --> " + id);
-//        profileService.delete(id);
-//        return ResponseEntity.ok().build();
-//    }
+
+    @DeleteMapping("/delete/{id}")
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    public ResponseEntity<?> delete(@PathVariable Integer id){
+        carrierService.delete(id);
+        return ResponseEntity.ok().build();
+    }
+    @PutMapping("/update/{id}")
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    public ResponseEntity<Boolean> update(@PathVariable Integer id,
+                                          @RequestBody CarrierDTO dto){
+        Boolean response = carrierService.update(id,dto);
+        return ResponseEntity.ok(response);
+    }
+
+
+
 
 }

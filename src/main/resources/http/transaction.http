@@ -1,0 +1,26 @@
+### Add Transaction
+POST localhost:8081/transaction/add_transaction
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2Nzc4NDc2ODEsInBob25lIjoiMDAwMCIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjc3OTM0MDgxLCJpc3MiOiJZb3VUdWJlIn0.1KggU20YLzJU_1bnIJAP2hvwgGaqkKX1qsrSQZKvw3enpzpv7e05s-8xO_zE8cBx-3evsDeMYtmM4zwKJPsdpw
+
+{
+  "carrierId": 10,
+  "requestId": "402880e586a77f0b0186a77ff2390001",
+  "offerId": "402880e586a773e80186a774e0280002"
+}
+
+### Bal Add
+PUT localhost:8081/transaction/evaluate_transaction
+Content-Type: application/json
+
+{
+  "transactionId": 1,
+  "bal": 9
+}
+
+### Get list
+GET http://localhost:8081/transaction/get_list
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2Nzc4NDc2ODEsInBob25lIjoiMDAwMCIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjc3OTM0MDgxLCJpc3MiOiJZb3VUdWJlIn0.1KggU20YLzJU_1bnIJAP2hvwgGaqkKX1qsrSQZKvw3enpzpv7e05s-8xO_zE8cBx-3evsDeMYtmM4zwKJPsdpw
+
+### min score 50
+// 10 * 5

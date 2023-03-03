@@ -1,11 +1,11 @@
 ### District ###
 POST http://localhost:8081/district/add_district
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2Nzc3NjA4NDksInBob25lIjoiMDAwMCIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjc3ODQ3MjQ5LCJpc3MiOiJZb3VUdWJlIn0.sbwssA1GjlEbhqYAI2x8HVkpDxKqpF0uJvmtY3Tbyx3tshfN0MayFQEYy0awDiKC6Ra0vrB_xKMCBTWLILPvBg
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2Nzc4NDc2ODEsInBob25lIjoiMDAwMCIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNjc3OTM0MDgxLCJpc3MiOiJZb3VUdWJlIn0.1KggU20YLzJU_1bnIJAP2hvwgGaqkKX1qsrSQZKvw3enpzpv7e05s-8xO_zE8cBx-3evsDeMYtmM4zwKJPsdpw
 
 {
-  "name": "Guliston",
-  "regionId":7
+  "name": "Saraosiyo",
+  "regionId":1
 }
 
 
