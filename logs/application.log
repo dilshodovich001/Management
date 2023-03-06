@@ -3233,3 +3233,7 @@ Caused by: org.hibernate.query.SemanticException: The assignment expression type
 2023-03-03T19:52:58.951+05:00  INFO 2124 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.021s)
 2023-03-03T19:52:58.963+05:00  INFO 2124 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 3
 2023-03-03T19:52:58.963+05:00  INFO 2124 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2023-03-03T20:11:15.087+05:00  WARN 2124 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m49s900ms865µs800ns).
+2023-03-03T21:29:58.628+05:00  INFO 2124 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-03T21:29:58.683+05:00  INFO 2124 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-03T21:29:58.695+05:00  INFO 2124 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

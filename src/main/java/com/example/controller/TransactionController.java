@@ -52,4 +52,8 @@ public class TransactionController {
         transactionService.delete(id);
         return ResponseEntity.ok().build();
     }
+    @PostMapping("/add")
+    public ResponseEntity<?> add(){
+        return ResponseEntity.ok().build();
+    }
 }
