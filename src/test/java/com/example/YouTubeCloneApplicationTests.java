@@ -10,7 +10,7 @@ class YouTubeCloneApplicationTests {
 
 	@Test
 	void contextLoads() {
-		System.out.println(MD5Util.encode("0000"));
+		
 	}
 
 }
